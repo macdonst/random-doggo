@@ -9,11 +9,13 @@ export default function DogForm({ html }) {
           super()
           this.form = this.querySelector('form')
           this.select = this.querySelector('select')
-          this.submit = this.querySelector('input[type=submit]')
+          this.submit = this.querySelector('button')
           this.onChange = this.onChange.bind(this)
+          console.log(this.form, this.select, this.submit)
         }
         connectedCallback() {
             if (this.select && this.submit) {
+                this.submit.classList.remove('inline-flex')
                 this.submit.classList.add('hidden')
                 this.select.addEventListener('change', this.onChange)
             }
