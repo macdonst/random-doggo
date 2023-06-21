@@ -1,10 +1,15 @@
 export default function DogSubmitButton({ html }) {
   return html`
     <style>
-        :host button {
-        }
+      button {
+        border-color: var(--dark);
+      }
+
+      button:focus {
+        outline-offset: 4px;
+      }
     </style>
-      <button class="relative inline-flex align-items-center justify-content-center outline-none select-none font-medium text-1 background-transparent radius1 border-current border-solid border1 pb-5 pi-5">
+      <button class="font-medium background-transparent radius1 border-solid border2 pb-4 pi-2">
         <span class="si-100 flex align-items-center justify-content-center">
             Fetch
             <span style="margin-left: 8px; display: inherit;">
@@ -14,8 +19,8 @@ export default function DogSubmitButton({ html }) {
                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                     xmlns:svg="http://www.w3.org/2000/svg"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16pt"
-                    height="24pt"
+                    width="16"
+                    height="24"
                     viewBox="0 0 595.276 841.89"
                     fill-rule="evenodd"
                     id="svg3021"

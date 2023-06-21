@@ -1,6 +1,6 @@
 export default function DogForm({ html }) {
   return html`
-    <form class="mb-3">
+    <form class="mb-3 text-center">
         <slot></slot>
     </form>
     <script type="module">
